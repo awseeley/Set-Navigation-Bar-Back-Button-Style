@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Used to center the image, you may need to adjust the top and bottom to move your image up or down if it is not centered.
         let inserts = UIEdgeInsets(top: 0,left: 0,bottom: -5,right: 0)
-        let imgBackArrow = UIImage(named: "dback")?.imageWithAlignmentRectInsets(inserts) // Load the image centered
+        let imgBackArrow = UIImage(named: "dback")?.withAlignmentRectInsets(inserts) // Load the image centered
         
         self.navigationController?.navigationBar.backIndicatorImage = imgBackArrow // Set the image
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = imgBackArrow // Set the image mask
